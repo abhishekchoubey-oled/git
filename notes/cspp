@@ -1,0 +1,4 @@
+The size of a virtual address space depends on the word size of the computer, since 
+the virtual address is encoded using a "word".
+
+Boolean algebra

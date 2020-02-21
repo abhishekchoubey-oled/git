@@ -1,0 +1,22 @@
+cargo new PROJECT
+cargo build # compile a project
+cargo run   # Build and run
+cargo check # Check if compiles successfully.
+cargo update # Update the crate
+cargo doc --open # Generate and open documentation of project in browser.
+
+Cargo.toml : keeps a list of the project dependencies
+
+crate : a collection of rust source files or libs
+
+Using crates in project - add the crate to Cargo.toml file
+Crates.io : place where all crates are hosted.
+
+
+########
+println!() is a macro
+println() is a function
+
+thread_rng : This API gives a random number generator which is local to the thread.
+
+Result : ok, err
