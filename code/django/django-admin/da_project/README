@@ -1,0 +1,3 @@
+1. Install 'pipenv', using 'pip install pipenv', an easy way to create a virtual environment.
+2. Enter the virtual environment using 'pipenv shell'.
+3. In the virtual environment, install django so that it does not get globally installed on the system.
