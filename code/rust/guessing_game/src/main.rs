@@ -23,8 +23,10 @@ fn main() {
 		   This is called shadowing, since there is already a variable named 'guess'.
 		   It is useful in conditions like this where we need to convert one variable
 		   into another so that we dont have to declare two different variables*/
-		let guess: u32 = guess.trim().parse()
-			.expect("Please type a number");
+		let guess: u32 = match guess.trim().parse() {
+			Ok(num) => num,
+			Err(_) => continue,
+		};
 		println!("Your guess is {},{}", guess, snum);
 
 		/* Compare and perform operations */
