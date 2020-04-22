@@ -25,9 +25,10 @@ fn main() {
 		   into another so that we dont have to declare two different variables*/
 		let guess: u32 = match guess.trim().parse() {
 			Ok(num) => num,
-			Err(_) => continue,
+			Err(_) => continue, // with this the program continues to run
+				// in case of an incorrect input rather than crashing.
 		};
-		println!("Your guess is {},{}", guess, snum);
+/*		println!("Your guess is {},{}", guess, snum);*/
 
 		/* Compare and perform operations */
 		match guess.cmp(&snum) {
@@ -37,3 +38,11 @@ fn main() {
 		}
 	}
 }
+
+/*
+expect : hard, crashes in case of un-expected input
+match : soft and allows you to handle errors
+
+Result : enum with variants , Ok and Err.
+
+*/
