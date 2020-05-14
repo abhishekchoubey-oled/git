@@ -40,6 +40,10 @@ fn main() {
 }
 
 /*
+loop : start an infinite loop, unconditional
+let : create a new variable, immutable
+let mut : create a mutable variable
+read_line : take user input in string format
 expect : hard, crashes in case of un-expected input
 match : soft and allows you to handle errors
 
