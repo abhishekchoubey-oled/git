@@ -1,0 +1,5 @@
+all : main main_1
+
+main, main_1 : main.c
+	gcc -Wall -o main main.c
+	gcc -Wall -o main_1 main.c
